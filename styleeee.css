@@ -1,0 +1,110 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Layout */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Warna latar belakang */
+}
+
+header {
+    background: #ac0000; /* Warna header */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+}
+
+.container {
+    display: flex; /* Flexbox untuk layout */
+    margin: 20px; /* Margin di sekitar container */
+}
+
+/* Sidebar */
+aside {
+    flex: 20%; /* Lebar sidebar */
+    background: #222; /* Warna sidebar */
+    padding: 20px; /* Padding dalam sidebar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+    border-radius: 8px; /* Sudut membulat */
+}
+
+/* Konten Utama */
+section.main {
+    flex: 80%; /* Lebar konten utama */
+    background: #fff; /* Warna konten utama */
+    padding: 20px; /* Padding dalam konten */
+    min-height: 530px; /* Tinggi minimum */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+    border-radius: 8px; /* Sudut membulat */
+    margin-left: 20px; /* Jarak antara sidebar dan konten utama */
+}
+
+/* Footer */
+footer {
+    background: #BDC3C7; /* Warna footer */
+    color: #2C3E50; /* Warna teks footer */
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px; /* Jarak di atas footer */
+    border-top: 1px solid #2C3E50; /* Garis pemisah footer */
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 20px; /* Jarak antar form-group */
+    display: flex; /* Flexbox untuk tata letak form */
+    align-items: center; /* Penyelarasan vertikal */
+}
+
+.form-group label {
+    flex: 0 0 30%; /* Lebar label */
+    font-weight: bold; /* Teks bold untuk label */
+    color: #34495e; /* Mengubah warna teks label */
+}
+
+.form-group .input {
+    flex: 1; /* Mengisi sisa ruang */
+}
+
+/* Mengatur tampilan tombol */
+.tombol {
+    padding: 10px 15px; /* Padding tombol */
+    color: #fff; /* Warna teks putih */
+    border: none; /* Menghapus border default */
+    border-radius: 5px; /* Sudut membulat */
+    cursor: pointer; /* Mengubah kursor saat hover */
+    transition: background-color 0.3s ease; /* Transisi halus untuk hover */
+}
+
+/* Warna tombol */
+.tombol.simpan {
+    background: #038ade; /* Warna tombol simpan */
+}
+
+.tombol.reset {
+    background: #fb8307; /* Warna tombol reset */
+}
+
+/* Efek hover pada tombol */
+.tombol.simpan:hover {
+    background: #0273b8; /* Warna lebih gelap saat hover */
+}
+
+.tombol.reset:hover {
+    background: #e08b00; /* Warna lebih gelap saat hover */
+}
+
+/* Responsive Layout */
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column; /* Ubah arah menjadi kolom */
+    }
+    section.main {
+        margin-left: 0; /* Hapus margin kiri di layar kecil */
+    }
+}

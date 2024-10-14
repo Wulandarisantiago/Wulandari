@@ -1,0 +1,89 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Layout */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Warna latar belakang */
+}
+
+header {
+    background: #ce0000; /* Warna header */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(255, 0, 0, 0.1); /* Bayangan halus */
+}
+
+/* Container for sidebar and main content */
+.container {
+    display: flex; /* Flexbox untuk layout */
+    margin: 20px; /* Margin di sekitar container */
+}
+
+/* Sidebar */
+aside {
+    flex: 20%; /* Lebar sidebar */
+    background: #222; /* Warna sidebar */
+    padding: 20px; /* Padding dalam sidebar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+    border-radius: 8px; /* Sudut membulat */
+}
+
+/* Main Content */
+section.main {
+    flex: 80%; /* Lebar konten utama */
+    background: #fff; /* Warna konten utama */
+    padding: 20px; /* Padding dalam konten */
+    min-height: 530px; /* Tinggi minimum */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+    border-radius: 8px; /* Sudut membulat */
+    margin-left: 20px; /* Jarak antara sidebar dan konten utama */
+}
+
+/* Footer */
+footer {
+    background: #BDC3C7; /* Warna footer */
+    color: #2C3E50; /* Warna teks footer */
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px; /* Jarak di atas footer */
+    border-top: 1px solid #2C3E50; /* Garis pemisah footer */
+}
+
+/* Responsive Layout */
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column; /* Ubah arah menjadi kolom */
+    }
+    section.main {
+        margin-left: 0; /* Hapus margin kiri di layar kecil */
+    }
+}
+
+/* Navigasi */
+.menu {
+    list-style: none; /* Menghapus bullet list */
+    padding: 0; /* Menghapus padding dari <ul> */
+}
+
+.menu li {
+    border-bottom: 1px solid #444; /* Garis batas di bawah setiap item menu */
+}
+
+.menu a {
+    display: block;
+    padding: 15px; /* Padding di sekitar item menu */
+    color: #ecf0f1; /* Warna item menu */
+    text-decoration: none; /* Menghapus garis bawah pada link */
+    transition: background 0.3s ease; /* Transisi halus untuk hover */
+}
+
+/* Mengganti background menu ketika ditunjuk mouse */
+.menu a:hover {
+    background: #48a5f5; /* Warna hover */
+}
